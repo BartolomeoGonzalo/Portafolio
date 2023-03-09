@@ -1,0 +1,230 @@
+h1 {text-align: center;}
+h2 {text-align: center;}
+
+header nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#barra {
+    display: none;
+}
+
+/* HAMBURGUESA */
+
+#menu-hamburguesa {
+    width: 30px;
+    height: 23px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+#menu-hamburguesa span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 6px;
+    transform-origin: 0 100%;
+    transition: all 300ms;
+}
+
+/* ACTIVE */
+
+#burguer.active .linea1 {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+#burguer.active .linea2 {
+    opacity: 0;
+    margin-left: -40px;
+}
+
+#burguer.active .linea3 {
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+/* MENU DESPLEGABLE */
+
+#menu-hamburguesa div:nth-child(2) {
+    width: 100vw;
+    height: 0;
+    background-color: #152331;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    transition: all 300ms ease-out;
+    background-image: url(../Iconos/linkedin.png), url(../Iconos/mail.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 41% 90%, 59% 90%;
+}
+
+#menu-hamburguesa div:nth-child(2) a {
+    padding: 8px 0;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 90vw;
+    font-size: 1.1em;
+}
+
+#menu-hamburguesa div.open:nth-child(2) {
+    height: 100vh;
+}
+
+header #menu {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #152331;
+}
+
+header li {
+    padding: 10px 0;
+}
+
+/* HERO */
+
+#hero {
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 50px 50px;
+    background-color: #F8F8F8;
+}
+
+button {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#img-illustracion {
+    display: none;
+}
+
+/* SOBRE MI */
+
+#sobre-mi {
+    background-color: #F8F8F8;
+    margin-top: 30px;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sobre-mi img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 40px 10px 30px 10px;
+}
+
+#texto-sobremi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#texto-sobremi h3 {
+    display: none;
+}
+
+#texto-sobremi p {
+    max-width: 300px;
+    padding: 0 20px;
+}
+
+/* ESTUDIOS */
+
+#estudios {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+
+#estudios h4 {
+    width: 70vw;
+    text-align: center;
+}
+
+#container-estudios {
+    margin-top: 50px;
+}
+
+.container-est {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.m-p {
+    margin-top: 10px;
+}
+
+#porcentajes .container-icon {
+    align-items: center;
+    width: 70vw;
+}
+
+/* PROYECTOS */
+
+#proyectos h3 {
+    display: none;
+}
+
+#proyectos div span:first-child{
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 420px;
+    background-image: url(../Mockups/web-francia-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#proyectos div span:nth-child(2){
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 420px;
+    background-image: url(../Mockups/app-addict-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#proyectos div span:nth-child(3){
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 420px;
+    background-image: url(../Mockups/web-just-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#proyectos div span:last-child{
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 420px;
+    background-image: url(../Mockups/logo-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #BDD2DE;
+}
+
