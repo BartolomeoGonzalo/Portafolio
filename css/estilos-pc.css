@@ -31,7 +31,7 @@ body {
 /* HERO */
 
 #hero {
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -39,9 +39,8 @@ body {
 }
 
 #yo {
-    /* margin-left: 190px; */
-    padding: 0 250px 0 190px;
-    width: 57vw;
+    margin-left: 190px;
+    width: 50vw;
 }
 
 #img-illustracion {
@@ -76,7 +75,7 @@ header button {
 #sobre-mi img {
     height: 436px;
     margin-left: 190px;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 
 #redes {
@@ -106,53 +105,173 @@ header button {
 /* ESTUDIOS */
 
 #estudios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #F8F8F8;
+    padding: 60px 0;
 }
 
 #estudios h3 {
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 5px;
 }
 
-#container-general {
-    display: flex;
-    margin: 0 190px;
+#estudios h3, #estudios p{
+    text-align: center;
 }
 
-#container-general {
-    width: 1060px;
+#container-general{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-}
-
-#container-estudios {
-    width: 430px;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-#porcentajes {
-    width: 430px;
-    align-items: start;
+#container-general h3 {
+    margin-bottom: 45px;
 }
 
-.container-est:first-child {
-    margin-bottom: 60px;
+#container-estudios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 433px;
+    background-color: white;
+    padding: 30px 0;
+    margin-right: 58px;
+    margin-left: 190px;
+}
+
+.container-est {
+    text-align: center;
 }
 
 .container-est h4 {
     margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
-#porcentajes .container-icon {
+.container-est:last-child {
+    margin-top: 50px;
+}
+
+.container-est p {
+    margin-bottom: 5px;
+}
+
+#container-conocimientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 433px;
+    background-color: white;
+    padding: 30px 0;
+    margin-right: 190px;
+}
+
+.texto-porc {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+/* PROGRAMAS */
+
+#programas {
+    width: 1060px;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#programas li {
+    width: 212px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-#porcentajes .container-icon {
-    width: 100%;
+#programas .line {
+    border-right: 1px solid #4DA0E8;
+}
+
+#programas li:first-child {
+    background-image: url(../Iconos/logo-illustrator.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#programas li:nth-child(2) {
+    background-image: url(../Iconos/logo-photoshop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#programas li:nth-child(3) {
+    background-image: url(../Iconos/logo-figma.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#programas li:nth-child(4) {
+    background-image: url(../Iconos/logo-visual.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#programas li:last-child {
+    background-image: url(../Iconos/logo-wordpress.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* PROYECTOS */
+
+#proyectos {
+    text-align: center;
+    background-color: #F8F8F8;
+}
+
+#proyectos h3 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#imagenes div{
+    display: flex;
+}
+
+#imagenes div span {
+    width: 50%;
+    height: 420px;
+}
+
+#imagenes div:first-child span:first-child {
+    background: url(../Mockups/logo.png), linear-gradient(90deg, rgba(247,248,248,1) 36%, rgba(210,223,166,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#imagenes div:first-child span:last-child {
+    background-image: url(../Mockups/web-just.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#imagenes div:last-child span:first-child {
+    background-image: url(../Mockups/web-francia.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#imagenes div:last-child span:last-child {
+    background: url(../Mockups/app-addict1.png), url(../Mockups/app-addict2.png), linear-gradient(90deg, rgba(131,164,212,1) 0%, rgba(182,251,255,1) 72%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 30% center, 70% center;
 }

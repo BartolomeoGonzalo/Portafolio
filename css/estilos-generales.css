@@ -19,7 +19,7 @@ body {
 h1 {font-size: 3em; margin: 0;}
 h2 {font-size: 1.3em; margin: 0; font-weight: normal;}
 h3 {font-size: 1.2em;}
-h4 {border-bottom: 1px solid #A2CCF1; color: #4DA0E8;}
+h4 {border-bottom: 1px solid #A2CCF1; color: #4DA0E8; font-size: 1.2em;}
 p {font-size: 0.9em;}
 li {font-size: 0.9em;}
 ul {
@@ -47,59 +47,35 @@ button:hover {
     background-color: #1a81db;
 }
 
-/* PORCENTAJES */
+/* ESTUDIOS */
 
-#porcentajes {
-    display: flex;
-    flex-direction: column;
+#container-estudios, #container-conocimientos, #programas{
+    box-shadow: 5px 5px 10px 0px rgba(95,95,95,0.25);
+    border-radius: 5px;
 }
 
-#porcentajes div p {
-    height: 30px;
+#container-conocimientos .texto-porc {
+    margin-top: 22px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
-#porcentajes div:first-child div p {
+#container-conocimientos div:nth-child(2) {
     border-bottom: 3px solid #FA524F;
     color: #FA524F;
-    width: 95px;
 }
 
-#porcentajes div:nth-child(2) div p {
+#container-conocimientos div:nth-child(3) {
     border-bottom: 3px solid #FAAC5F;
     color: #FAAC5F;
-    width: 110px;
 }
 
-#porcentajes div:nth-child(3) div p {
+#container-conocimientos div:nth-child(4) {
     border-bottom: 3px solid #32BA66;
     color: #32BA66;
-    width: 110px;
 }
 
-#porcentajes div:last-child div p {
+#container-conocimientos div:last-child {
     border-bottom: 3px solid #4DA0E8;
     color: #4DA0E8;
-    width: 70px;
-}
-
-.icon-estudios {
-    display: block;
-    width: 70px;
-    height: 70px;
-    background-color: white;
-    margin-right: 20px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 4px rgba(149, 149, 149, 0.25);
-}
-
-#porcentajes div {
-    display: flex;
-}
-
-#porcentajes .texto-porc p:last-child{
-    text-align: right;
-}
-
-#porcentajes .container-icon {
-    margin-top: 20px;
 }

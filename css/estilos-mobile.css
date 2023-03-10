@@ -187,7 +187,7 @@ button {
     display: none;
 }
 
-#proyectos div span:first-child{
+#imagenes div:first-child span:first-child{
     margin: 0;
     display: block;
     width: 100%;
@@ -197,17 +197,17 @@ button {
     background-position: center right;
 }
 
-#proyectos div span:nth-child(2){
+#imagenes div:first-child span:last-child{
     margin: 0;
     display: block;
     width: 100%;
     height: 420px;
-    background-image: url(../Mockups/app-addict-mobile.png);
+    background: url(../Mockups/logo.png), linear-gradient(90deg, rgba(247,248,248,1) 36%, rgba(210,223,166,1) 100%);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#proyectos div span:nth-child(3){
+#imagenes div:last-child span:first-child{
     margin: 0;
     display: block;
     width: 100%;
@@ -217,14 +217,13 @@ button {
     background-position: center center;
 }
 
-#proyectos div span:last-child{
+#imagenes div:last-child span:last-child{
     margin: 0;
     display: block;
     width: 100%;
     height: 420px;
-    background-image: url(../Mockups/logo-mobile.png);
+    background-image: url(../Mockups/app-addict1.png), linear-gradient(90deg, rgba(131,164,212,1) 0%, rgba(182,251,255,1) 72%);
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: #BDD2DE;
 }
 
