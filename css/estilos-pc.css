@@ -6,10 +6,6 @@
 
 #menu {
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F8F8F8;
 }
 
 #barra {
@@ -27,7 +23,7 @@
 }
 
 #barra a:hover {
-    color: #1a81db; 
+    color: #A2CCF1; 
 }
 
 /* HERO */
@@ -51,13 +47,17 @@
 }
 
 #img-illustracion img{
-    min-height: 400px;
-    margin-left: -25%;
-    padding: 20px 80px 20px 0
+    max-height: 550px;
+    margin-left: -30%;
+    padding: 40px 80px 40px 0
 }
 
 header button {
     margin-top: 20px ;
+}
+
+header button:hover {
+    background-color: #1a81db;
 }
 
 /* SOBRE MI */
@@ -86,7 +86,7 @@ header button {
     background-color: #4DA0E8;
     margin: 0 60px;
     border-radius: 0 50px 50px 0;
-    background-image: url(../Iconos/linkedin.png), url(../Iconos/mail.png);
+    background-image: url(../Iconos/linkedin.png), url(../Iconos/mail-ancho.png);
     background-repeat: no-repeat, no-repeat;
     background-position: center 42%, center 58%;
 }
@@ -256,9 +256,9 @@ header button {
 }
 
 #imagenes div:first-child span:first-child {
-    background: url(../Mockups/logo.png), linear-gradient(90deg, rgba(247,248,248,1) 36%, rgba(210,223,166,1) 100%);
+    background: url(../Mockups/logo.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 30%;
 }
 
 #imagenes div:first-child span:last-child {
@@ -274,9 +274,9 @@ header button {
 }
 
 #imagenes div:last-child span:last-child {
-    background: url(../Mockups/app-addict1.png), url(../Mockups/app-addict2.png), linear-gradient(90deg, rgba(131,164,212,1) 0%, rgba(182,251,255,1) 72%);
+    background: url(../Mockups/app-addict.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: 30% center, 70% center;
+    background-position: left 30%;
 }
 
 @media (min-width: 1220px) {
@@ -293,8 +293,8 @@ header button {
     }
 
     #img-illustracion img{
-        max-height: 600px;
-        padding: 20px 190px 20px 0
+        max-height: 700px;
+        padding: 40px 190px 40px 0
     }
 
     #redes {
