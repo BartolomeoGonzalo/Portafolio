@@ -1,6 +1,5 @@
-@import url("estilos-pc.css") screen and (min-width: 1150px);
-
-@import url("estilos-mobile.css") screen and (max-width: 499px);
+@import url("estilos-mobile.css") screen and (max-width: 991px);
+@import url("estilos-pc.css") screen and (min-width: 992px);
 
 * {
     box-sizing: border-box;
@@ -33,7 +32,7 @@ header a {
     color: black;
 }
 
-button {
+#buttonhero {
     font-family: 'Poppins', sans-serif;
     background-color: #4DA0E8;
     padding: 10px 46px;

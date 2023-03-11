@@ -92,11 +92,10 @@ header li {
 /* HERO */
 
 #hero {
-    height: 97vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 0 0 50px 50px;
     background-color: #F8F8F8;
 }
 
@@ -115,9 +114,8 @@ button {
 /* SOBRE MI */
 
 #sobre-mi {
-    background-color: #F8F8F8;
-    margin-top: 30px;
-    height: 88vh;
+    background-color: white;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -134,6 +132,7 @@ button {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 #texto-sobremi h3 {
@@ -141,14 +140,13 @@ button {
 }
 
 #texto-sobremi p {
-    max-width: 300px;
+    max-width: 80vw;
     padding: 0 20px;
 }
 
 /* ESTUDIOS */
 
 #estudios {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,13 +154,25 @@ button {
     background-color: #F8F8F8;
 }
 
-#estudios h4 {
-    width: 70vw;
-    text-align: center;
+#container-estudios {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-top: 60px;
 }
 
-#container-estudios {
-    margin-top: 50px;
+#container-estudios h3 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#container-estudios h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .container-est {
@@ -172,13 +182,31 @@ button {
     margin-bottom: 30px;
 }
 
-.m-p {
-    margin-top: 10px;
+#container-conocimientos {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    background-color: white;
 }
 
-#porcentajes .container-icon {
-    align-items: center;
-    width: 70vw;
+#container-conocimientos h3 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#container-conocimientos .texto-porc {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#estudios p {
+    max-width: 80vw;
+    text-align: center;
+    margin-top: 5px;
 }
 
 /* PROYECTOS */
@@ -225,5 +253,23 @@ button {
     background-image: url(../Mockups/app-addict1.png), linear-gradient(90deg, rgba(131,164,212,1) 0%, rgba(182,251,255,1) 72%);
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+@media (min-width: 628px) {
+    #imagenes div:first-child span:first-child{
+        background-image: url(../Mockups/web-francia.png);
+        background-position: top right;
+    }
+
+    #imagenes div:last-child span:first-child{
+        background-image: url(../Mockups/web-just.png);
+        background-position: top center;
+    }
+
+    #imagenes div:last-child span:last-child{
+        background-image: url(../Mockups/app-addict1.png), url(../Mockups/app-addict2.png), linear-gradient(90deg, rgba(131,164,212,1) 0%, rgba(182,251,255,1) 72%);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 30% center, 70% center;
+    }
 }
 

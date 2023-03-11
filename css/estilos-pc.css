@@ -1,7 +1,3 @@
-body {
-    background-color: #F8F8F8;
-}
-
 /* NAV */
 
 #menu-hamburguesa {
@@ -17,7 +13,13 @@ body {
 }
 
 #barra {
+    width: 100%;
+    height: 100px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #F8F8F8;
 }
 
 #barra a {
@@ -31,28 +33,27 @@ body {
 /* HERO */
 
 #hero {
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     background-color: #F8F8F8;
 }
 
 #yo {
-    margin-left: 190px;
-    width: 50vw;
+    margin-left: 80px;
+    padding-right: 200px;
 }
 
 #img-illustracion {
-    width: 43vw;
+    width: 40vw;
     background-color: #A2CCF1;
     border-radius: 100px 0 0 100px;
 }
 
 #img-illustracion img{
-    max-height: 600px;
+    min-height: 400px;
     margin-left: -25%;
-    padding: 20px 190px 20px 0
+    padding: 20px 80px 20px 0
 }
 
 header button {
@@ -74,7 +75,7 @@ header button {
 
 #sobre-mi img {
     height: 436px;
-    margin-left: 190px;
+    margin-left: 80px;
     border-radius: 5px;
 }
 
@@ -83,7 +84,7 @@ header button {
     min-width: 70px;
     height: 436px;
     background-color: #4DA0E8;
-    margin: 0 95px;
+    margin: 0 60px;
     border-radius: 0 50px 50px 0;
     background-image: url(../Iconos/linkedin.png), url(../Iconos/mail.png);
     background-repeat: no-repeat, no-repeat;
@@ -94,7 +95,7 @@ header button {
     display: flex;
     flex-direction: column;
     width: 400px;
-    margin-right: 190px;
+    margin-right: 80px;
     align-items: center;
 }
 
@@ -138,7 +139,7 @@ header button {
     background-color: white;
     padding: 30px 0;
     margin-right: 58px;
-    margin-left: 190px;
+    margin-left: 80px;
 }
 
 .container-est {
@@ -167,7 +168,7 @@ header button {
     height: 433px;
     background-color: white;
     padding: 30px 0;
-    margin-right: 190px;
+    margin-right: 80px;
 }
 
 .texto-porc {
@@ -179,7 +180,7 @@ header button {
 /* PROGRAMAS */
 
 #programas {
-    width: 1060px;
+    max-width: 1060px;
     height: 132px;
     display: flex;
     justify-content: center;
@@ -187,6 +188,8 @@ header button {
     background-color: white;
     margin: auto;
     margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 #programas li {
@@ -274,4 +277,27 @@ header button {
     background: url(../Mockups/app-addict1.png), url(../Mockups/app-addict2.png), linear-gradient(90deg, rgba(131,164,212,1) 0%, rgba(182,251,255,1) 72%);
     background-repeat: no-repeat, no-repeat;
     background-position: 30% center, 70% center;
+}
+
+@media (min-width: 1220px) {
+    #programas {
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1330px) {
+    #yo {
+        margin-left: 190px;
+        padding-right: 200px;
+    }
+
+    #img-illustracion img{
+        max-height: 600px;
+        padding: 20px 190px 20px 0
+    }
+
+    #redes {
+        margin: 0 95px;
+    }
 }
