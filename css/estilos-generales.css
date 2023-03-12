@@ -67,12 +67,12 @@ button a {
     color: #FA524F;
 }
 
-#container-conocimientos div:nth-child(2):before {
+#container-conocimientos div:nth-child(2)::before {
     position: absolute;
     content: '';
     width: 250px;
     height: 3px;
-    margin-top: 25px;
+    margin-top: 30px;
     background: linear-gradient(90deg, rgba(250,82,79,1) 67%, rgba(238,238,238,1) 67%);
 }
 
@@ -80,12 +80,12 @@ button a {
     color: #faac5f;
 }
 
-#container-conocimientos div:nth-child(3):before {
+#container-conocimientos div:nth-child(3)::before {
     position: absolute;
     content: '';
     width: 250px;
     height: 3px;
-    margin-top: 25px;
+    margin-top: 30px;
     background: linear-gradient(90deg, rgba(250,172,95,1) 80%, rgba(238,238,238,1) 80%);
 }
 
@@ -93,12 +93,12 @@ button a {
     color: #32BA66;
 }
 
-#container-conocimientos div:nth-child(4):before {
+#container-conocimientos div:nth-child(4)::before {
     position: absolute;
     content: '';
     width: 250px;
     height: 3px;
-    margin-top: 25px;
+    margin-top: 30px;
     background: linear-gradient(90deg, rgba(50,186,102,1) 80%, rgba(238,238,238,1) 80%);
 }
 
@@ -106,11 +106,11 @@ button a {
     color: #4DA0E8;
 }
 
-#container-conocimientos div:last-child:before {
+#container-conocimientos div:last-child::before {
     position: absolute;
     content: '';
     width: 250px;
     height: 3px;
-    margin-top: 25px;
+    margin-top: 30px;
     background: linear-gradient(90deg, rgba(77,160,232,1) 30%, rgba(238,238,238,1) 30%);
 }

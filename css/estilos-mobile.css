@@ -219,14 +219,30 @@ button {
 
 #programas {
     width: 80vw;
-    margin: 60px 0;
+    height: 90px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-    padding: 20px 40px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.m-h3 {
+    text-align: center;
 }
 
 #programas li {
-    
+    width: 212px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#programas .line {
+    border-right: 1px solid #4DA0E8;
 }
 
 /* PROYECTOS */
@@ -290,6 +306,12 @@ button {
         background-image: url(../Mockups/app-addict.png);
         background-repeat: no-repeat;
         background-position: left 30%;
+    }
+}
+
+@media (min-width: 700px) {
+    #programas {
+        height: 132px;
     }
 }
 
