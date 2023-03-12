@@ -89,6 +89,7 @@ header #menu {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #152331;
+    z-index: 10;
 }
 
 header li {
@@ -212,6 +213,20 @@ button {
     max-width: 80vw;
     text-align: center;
     margin-top: 5px;
+}
+
+/* PROGRAMAS */
+
+#programas {
+    width: 80vw;
+    margin: 60px 0;
+    display: flex;
+    background-color: white;
+    padding: 20px 40px;
+}
+
+#programas li {
+    
 }
 
 /* PROYECTOS */

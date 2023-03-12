@@ -22,7 +22,6 @@
 #barra a {
     padding: 30px;
     font-size: 1.1em;
-    
 }
 
 #barra a:hover {
@@ -254,36 +253,6 @@ header button:hover {
 
 #programas .line {
     border-right: 1px solid #4DA0E8;
-}
-
-#programas li:first-child {
-    background-image: url(../Iconos/logo-illustrator.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#programas li:nth-child(2) {
-    background-image: url(../Iconos/logo-photoshop.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#programas li:nth-child(3) {
-    background-image: url(../Iconos/logo-figma.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#programas li:nth-child(4) {
-    background-image: url(../Iconos/logo-visual.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#programas li:last-child {
-    background-image: url(../Iconos/logo-wordpress.png);
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 /* PROYECTOS */
