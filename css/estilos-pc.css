@@ -16,10 +16,13 @@
     align-items: center;
     position: fixed;
     background-color: #F8F8F8;
+    z-index: 10;
 }
 
 #barra a {
     padding: 30px;
+    font-size: 1.1em;
+    
 }
 
 #barra a:hover {
@@ -29,27 +32,72 @@
 /* HERO */
 
 #hero {
+    height: calc(100vh - 100px);
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-hero {
+    width: 1060px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F8F8F8;
+    margin: 0 80px;
+}
+
+#container-hero::before {
+    position: absolute;
+    content: '';
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    left: -12%;
+    top: 45%;
+    background: linear-gradient(90deg, rgba(77,160,232,1) 0%, rgba(249,249,249,1) 100%);
+    animation: animateCircle 4s linear infinite;
+}
+
+@keyframes animateCircle {
+    50% {
+        left: -10%;
+        top: 42%;
+    }
+}
+
+#container-hero::after {
+    position: absolute;
+    content: '';
+    height: calc(100vh - 100px);
+    width: 45vw;
+    border-radius: 100px 0 0 100px;
+    right: 0;
+    background-color: #A2CCF1;
 }
 
 #yo {
-    margin-left: 80px;
-    padding-right: 200px;
-}
-
-#img-illustracion {
-    width: 40vw;
-    background-color: #A2CCF1;
-    border-radius: 100px 0 0 100px;
+    z-index: 5;
 }
 
 #img-illustracion img{
-    max-height: 550px;
-    margin-left: -30%;
-    padding: 40px 80px 40px 0
+    position: relative;
+    height: 45vh;
+    top: -100px;
+    right: 50px;
+    animation: animateIllustration 4s linear infinite;
+    margin-top: 150px;
+}
+
+@keyframes animateIllustration {
+    50% {
+        right: 30px;
+        top: -90px;
+    }
+}
+
+#img-illustracion {
+    z-index: 5;
 }
 
 header button {
@@ -67,6 +115,7 @@ header button:hover {
 }
 
 #sobre-mi {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +133,7 @@ header button:hover {
     min-width: 70px;
     height: 436px;
     background-color: #4DA0E8;
-    margin: 0 60px;
+    margin: 0 95px;
     border-radius: 0 50px 50px 0;
     background-image: url(../Iconos/linkedin.png), url(../Iconos/mail-ancho.png);
     background-repeat: no-repeat, no-repeat;
@@ -94,7 +143,7 @@ header button:hover {
 #texto-sobremi {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 400px;
     margin-right: 80px;
     align-items: center;
 }
@@ -106,11 +155,14 @@ header button:hover {
 /* ESTUDIOS */
 
 #estudios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     background-color: #F8F8F8;
-    padding: 60px 0;
 }
 
-#estudios h3 {
+#estudios .m-h3 {
     margin-top: 40px;
     margin-bottom: 5px;
 }
@@ -126,7 +178,7 @@ header button:hover {
 }
 
 #container-general h3 {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 #container-estudios {
@@ -135,7 +187,7 @@ header button:hover {
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 433px;
+    height: 400px;
     background-color: white;
     padding: 30px 0;
     margin-right: 58px;
@@ -165,7 +217,7 @@ header button:hover {
     justify-content: center;
     align-items: center;
     width: 500px;
-    height: 433px;
+    height: 400px;
     background-color: white;
     padding: 30px 0;
     margin-right: 80px;
@@ -237,13 +289,8 @@ header button:hover {
 /* PROYECTOS */
 
 #proyectos {
-    text-align: center;
+    height: 100vh;
     background-color: #F8F8F8;
-}
-
-#proyectos h3 {
-    padding-top: 60px;
-    padding-bottom: 30px;
 }
 
 #imagenes div{
@@ -252,7 +299,7 @@ header button:hover {
 
 #imagenes div span {
     width: 50%;
-    height: 420px;
+    height: 50vh;
 }
 
 #imagenes div:first-child span:first-child {
@@ -279,25 +326,51 @@ header button:hover {
     background-position: left 30%;
 }
 
+@media (min-width: 1050px) {
+    #img-illustracion img{
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1120px) {
+    #img-illustracion img{
+        height: 55vh;
+    }
+}
+
 @media (min-width: 1220px) {
     #programas {
         margin: auto;
         margin-top: 30px;
     }
-}
-
-@media (min-width: 1330px) {
-    #yo {
-        margin-left: 190px;
-        padding-right: 200px;
-    }
 
     #img-illustracion img{
-        max-height: 700px;
-        padding: 40px 190px 40px 0
+        height: 60vh;
     }
+}
 
-    #redes {
-        margin: 0 95px;
+@media (min-width: 1850px) {
+    #imagenes div:first-child span:first-child {
+        background: url(../Mockups/logo-xl.png);
+        background-repeat: no-repeat;
+        background-position: center 30%;
+    }
+    
+    #imagenes div:first-child span:last-child {
+        background-image: url(../Mockups/web-just-xl.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    #imagenes div:last-child span:first-child {
+        background-image: url(../Mockups/web-francia-xl.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    
+    #imagenes div:last-child span:last-child {
+        background: url(../Mockups/app-addict-xl.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left 30%;
     }
 }
