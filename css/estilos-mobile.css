@@ -128,10 +128,13 @@ button {
     justify-content: center;
 }
 
+#redes {
+    display: none;
+}
+
 #sobre-mi img {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 40px 10px 30px 10px;
+    width: 80vw;
+    margin: 40px 0 30px 0;
 }
 
 #texto-sobremi {
@@ -247,11 +250,11 @@ button {
 
 /* PROYECTOS */
 
-#proyectos h3 {
-    display: none;
+#imagenes a {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-#imagenes div:first-child span:first-child{
+#imagenes div:first-child div:first-child{
     margin: 0;
     display: block;
     width: 100%;
@@ -261,7 +264,7 @@ button {
     background-position: center right;
 }
 
-#imagenes div:first-child span:last-child{
+#imagenes div:first-child div:last-child{
     margin: 0;
     display: block;
     width: 100%;
@@ -271,7 +274,7 @@ button {
     background-position: center 30%;
 }
 
-#imagenes div:last-child span:first-child{
+#imagenes div:last-child div:first-child{
     margin: 0;
     display: block;
     width: 100%;
@@ -281,7 +284,7 @@ button {
     background-position: center center;
 }
 
-#imagenes div:last-child span:last-child{
+#imagenes div:last-child div:last-child{
     margin: 0;
     display: block;
     width: 100%;
@@ -291,18 +294,43 @@ button {
     background-position: left center;
 }
 
+#imagenes div a {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+@media (min-width: 520px) {
+    #sobre-mi img {
+        width: 420px;
+        margin: 40px 0 30px 0;
+    }
+
+    #redes {
+        width: 420px;
+    }
+
+    #texto-sobremi p {
+        width: 420px;
+    }
+}
+
 @media (min-width: 628px) {
-    #imagenes div:first-child span:first-child{
+    #imagenes div:first-child div:first-child{
         background-image: url(../Mockups/web-francia.png);
         background-position: top right;
     }
 
-    #imagenes div:last-child span:first-child{
+    #imagenes div:last-child div:first-child{
         background-image: url(../Mockups/web-just.png);
         background-position: top center;
     }
 
-    #imagenes div:last-child span:last-child{
+    #imagenes div:last-child div:last-child{
         background-image: url(../Mockups/app-addict.png);
         background-repeat: no-repeat;
         background-position: left 30%;

@@ -15,17 +15,18 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: #F8F8F8;
+    background-color: #152331;
     z-index: 10;
 }
 
 #barra a {
     padding: 30px;
     font-size: 1.1em;
+    color: white;
 }
 
 #barra a:hover {
-    color: #A2CCF1; 
+    color: #83A3C3; 
 }
 
 /* HERO */
@@ -36,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #152331;
 }
 
 #container-hero {
@@ -54,8 +56,9 @@
     border-radius: 50%;
     left: -12%;
     top: 45%;
-    background: linear-gradient(90deg, rgba(77,160,232,1) 0%, rgba(249,249,249,1) 100%);
+    background: linear-gradient(90deg, rgba(21,35,49,1) 19%, rgba(248,248,248,1) 100%);
     animation: animateCircle 4s linear infinite;
+    z-index: 4;
 }
 
 @keyframes animateCircle {
@@ -69,10 +72,10 @@
     position: absolute;
     content: '';
     height: calc(100vh - 100px);
-    width: 45vw;
-    border-radius: 100px 0 0 100px;
-    right: 0;
-    background-color: #A2CCF1;
+    width: 58vw;
+    border-radius: 0 100px 0 0;
+    left: 0;
+    background-color: #F8F8F8;
 }
 
 #yo {
@@ -104,7 +107,7 @@ header button {
 }
 
 header button:hover {
-    background-color: #1a81db;
+    background-color: #152331;
 }
 
 /* SOBRE MI */
@@ -128,15 +131,25 @@ header button:hover {
 }
 
 #redes {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-width: 70px;
     height: 436px;
-    background-color: #4DA0E8;
+    background-color: #152331;
     margin: 0 95px;
     border-radius: 0 50px 50px 0;
-    background-image: url(../Iconos/linkedin.png), url(../Iconos/mail-ancho.png);
     background-repeat: no-repeat, no-repeat;
     background-position: center 42%, center 58%;
+}
+
+#redes a {
+    text-indent: -1000px;
+}
+
+#redes a:first-child {
+    margin-bottom: 30px;
 }
 
 #texto-sobremi {
@@ -262,37 +275,53 @@ header button:hover {
     background-color: #F8F8F8;
 }
 
-#imagenes div{
+#imagenes .twoimg{
     display: flex;
 }
 
-#imagenes div span {
+#imagenes .twoimg div {
     width: 50%;
     height: 50vh;
 }
 
-#imagenes div:first-child span:first-child {
+#imagenes div:first-child div:first-child {
     background: url(../Mockups/logo.png);
     background-repeat: no-repeat;
     background-position: center 30%;
 }
 
-#imagenes div:first-child span:last-child {
+#imagenes div:first-child div:last-child {
     background-image: url(../Mockups/web-just.png);
     background-repeat: no-repeat;
     background-position: top center;
 }
 
-#imagenes div:last-child span:first-child {
+#imagenes div:last-child div:first-child {
     background-image: url(../Mockups/web-francia.png);
     background-repeat: no-repeat;
     background-position: top right;
 }
 
-#imagenes div:last-child span:last-child {
+#imagenes div:last-child div:last-child {
     background: url(../Mockups/app-addict.png);
     background-repeat: no-repeat, no-repeat;
     background-position: left 30%;
+}
+
+#imagenes div a {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 30px;
+}
+
+#imagenes .twoimg div:hover a {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 1050px) {

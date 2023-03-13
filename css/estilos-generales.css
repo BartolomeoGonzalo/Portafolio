@@ -27,13 +27,13 @@ ul {
     list-style: none;
 }
 
-header a {
+a {
     text-decoration: none;
     color: black;
 }
 
 button {
-    background-color: #4DA0E8;
+    background-color: #243d55;
     padding: 10px 46px;
     border: 0;
     border-radius: 5px;
@@ -44,6 +44,22 @@ button a {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     color: white;
+}
+
+/* SOBRE MI */
+
+#redes a:first-child {
+    background-image: url(../Iconos/linkedin.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+#redes a:last-child {
+    background-image: url(../Iconos/mail-ancho.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 24px;
 }
 
 /* ESTUDIOS */
