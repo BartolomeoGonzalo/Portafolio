@@ -22,16 +22,27 @@
                     <a href="#sobre-mi">Sobre Mi</a>
                     <a href="#estudios">Estudios</a>
                     <a href="#proyectos">Proyectos</a>
-                    <a href="#">Contacto</a>
+                    <a href="#contacto">Contacto</a>
+                    <div class="iconos">
+                        <a target="_blank" href="https://www.linkedin.com/in/gonzalobartolomeo/"></a>
+                        <a target="_blank" href="mailto:bartolomeogonzalo@gmail.com"></a>
+                    </div>
                 </div>
             </div>
+
+            <a id="logo" href="index.html">Gonza.design</a>
             
             <ul id="barra">
                 <li><a href="#sobre-mi">Sobre Mi</a></li>
                 <li><a href="#estudios">Estudios</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
+
+            <div class="iconos">
+                <a target="_blank" href="https://www.linkedin.com/in/gonzalobartolomeo/"></a>
+                <a target="_blank" href="mailto:bartolomeogonzalo@gmail.com"></a>
+            </div>
         </nav>
 
         <section id="hero">
@@ -51,16 +62,18 @@
     <main>
         <section id="sobre-mi">
             <h3 class="d-none">Sobre Mi</h3>
-            <img src="Imagenes/imagen-prueba.png" alt="yo"> 
-            <div id="redes">
-                <a href="https://www.linkedin.com/in/gonzalobartolomeo/">Linkedin</a>
-                <a href="mailto:bartolomeogonzalo@gmail.com">Gmail</a>
+            <div id="container-img">
+                <img src="Imagenes/yo.png" alt="yo">
             </div>
             <div id="texto-sobremi">
                 <h3>Sobre Mi</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, totam. Optio impedit molestias nesciunt expedita. Exercitationem animi totam natus fugiat consequuntur neque amet omnis commodi ut? Porro, excepturi necessitatibus. Voluptates.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, totam. Optio impedit molestias nesciunt expedita.
+                <p>Soy un estudiante de Desarrollo Web y Mobile, con ganas de seguir aprendiendo en el mundo
+                    de la tecnología.
+                    Mi objetivo hoy en día en conseguir trabajo para adquirir experiencia laboral y seguir
+                    expandiendo mis conocimientos tanto en el área del diseño como en el front-end y habilidades
+                    como el trabajo en equipo.
                 </p>
+                <button><a href="download/CV-Bartolomeo-Gonzalo.pdf" download="CV Bartolomeo Gonzalo">Descargar CV</a></button>
             </div>
         </section>
     
@@ -85,25 +98,25 @@
                         <h3>Mis Conocimientos</h3>
                         <div class="texto-porc">
                             <p>Diseño UX/UI</p>
-                            <p>70%</p>
+                            <p>80%</p>
                         </div>
                         <div class="texto-porc">
                             <p>HTML</p>
-                            <p>80%</p>
+                            <p>70%</p>
                         </div>
                         <div class="texto-porc">
                             <p>CSS</p>
-                            <p>80%</p>
+                            <p>70%</p>
                         </div>
                         <div class="texto-porc">
                             <p>JavaScript</p>
-                            <p>30%</p>
+                            <p>50%</p>
                         </div>
                     </div>
                 </div>
 
                 <h3 class="m-h3">Programas</h3>
-                <p>Programas que uso para diseñar y maquetar webs y apps</p>
+                <p class="d-none-mobile">Programas que uso para diseñar y maquetar webs y apps</p>
 
                 <ul id="programas">
                     <li class="line">
@@ -142,22 +155,42 @@
         </section>
 
         <section id="proyectos">
-            <div id="imagenes">   
-                <div class="twoimg">
-                    <div><a href="youtube.com">Creacion de Logo Addict Gaming</a></div>
-                    <div><a href="">Web Responsive con Bootstrap</a></div>
+            <h3>Proyectos</h3>
+            <div id="container-gymflow">
+                <div>
+                    <img src="Imagenes/gymflow.png" alt="Web Gym Flow">
                 </div>
-                <div class="twoimg">
-                    <div><a href="">Web con HTML/CSS</a></div>
-                    <div><a href="">Diseño de app Addict Gaming</a></div>
+                <div>
+                    <h4>Gym Flow</h4>
+                    <p class="subtitulo-proyecto">Web</p>
+                    <p class="texto-proyecto">Diseño de página Web y Mobile sobre gimnasio ficticio llamado “GymFlow”.
+                        Sitio donde los usuarios podrán navegar, informarse y asociarse.</p>
+                    <a href="download/Web-Gymflow.pdf" download="Web-Gymflow">Ver</a>
+                </div>
+            </div>
+            <div id="container-turismo360">
+                <div>
+                    <h4>Turismo 360</h4>
+                    <p class="subtitulo-proyecto">One Page</p>
+                    <p class="texto-proyecto">Diseño de One Page de agencia de viajes ficticia llamada “Turismo 360”.
+                        Hecha para informar sobre los servicios y viajes que ofrece la agencia.</p>
+                    <a href="download/One-Page-Turismo360.pdf" download="One-Page-Turismo360">Ver</a>
+                </div>
+                <div>
+                    <img src="Imagenes/turismo360.png" alt="Web Turismo 360">
                 </div>
             </div>
         </section>
         
     </main>
 
-    <footer>
-        
+    <footer id="contacto">
+        <ul>
+            <li><a target="_blank" href="https://www.linkedin.com/in/gonzalobartolomeo/">linkedin.com/in/gonzalobartolomeo/</a></li>
+            <li><a target="_blank" href="mailto:bartolomeogonzalo@gmail.com">bartolomeogonzalo@gmail.com</a></li>
+            <li>1168302810</li>
+        </ul>
+        <p>&#169 Copyright - Bartolomeo Gonzalo</p>
     </footer>
 
     <script src="js/script.js"></script>

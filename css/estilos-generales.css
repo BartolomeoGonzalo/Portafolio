@@ -33,14 +33,14 @@ a {
 }
 
 button {
-    background-color: #243d55;
+    background-color: #152331;
     padding: 10px 46px;
     border: 0;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 button a {
+    position: relative;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     color: white;
@@ -48,18 +48,38 @@ button a {
 
 /* SOBRE MI */
 
-#redes a:first-child {
-    background-image: url(../Iconos/linkedin.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
+#sobre-mi div {
+    max-width: 501px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#redes a:last-child {
-    background-image: url(../Iconos/mail-ancho.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 24px;
+#sobre-mi #container-img {
+    margin-right: 58px;
+    margin-left: 80px;
+}
+
+#sobre-mi img {
+    width: 501px;
+}
+
+#texto-sobremi button {
+    background-color: white;
+    border: 2px solid #152331;
+    margin-top: 30px;
+}
+
+#texto-sobremi button a{
+    color: #152331;
+}
+
+#texto-sobremi button:hover{
+    background-color: #152331;
+}
+
+#texto-sobremi button:hover a{
+    color: white;
 }
 
 /* ESTUDIOS */
@@ -89,7 +109,7 @@ button a {
     width: 250px;
     height: 3px;
     margin-top: 30px;
-    background: linear-gradient(90deg, rgba(250,82,79,1) 67%, rgba(238,238,238,1) 67%);
+    background: linear-gradient(90deg, rgba(250,82,79,1) 80%, rgba(238,238,238,1) 80%);
 }
 
 #container-conocimientos div:nth-child(3) {
@@ -102,7 +122,7 @@ button a {
     width: 250px;
     height: 3px;
     margin-top: 30px;
-    background: linear-gradient(90deg, rgba(250,172,95,1) 80%, rgba(238,238,238,1) 80%);
+    background: linear-gradient(90deg, rgba(250,172,95,1) 70%, rgba(238,238,238,1) 70%);
 }
 
 #container-conocimientos div:nth-child(4) {
@@ -115,7 +135,7 @@ button a {
     width: 250px;
     height: 3px;
     margin-top: 30px;
-    background: linear-gradient(90deg, rgba(50,186,102,1) 80%, rgba(238,238,238,1) 80%);
+    background: linear-gradient(90deg, rgba(50,186,102,1) 70%, rgba(238,238,238,1) 70%);
 }
 
 #container-conocimientos div:last-child {
@@ -128,5 +148,68 @@ button a {
     width: 250px;
     height: 3px;
     margin-top: 30px;
-    background: linear-gradient(90deg, rgba(77,160,232,1) 30%, rgba(238,238,238,1) 30%);
+    background: linear-gradient(90deg, rgba(77,160,232,1) 50%, rgba(238,238,238,1) 50%);
+}
+
+/* PROYECTOS */
+
+#proyectos a {
+    width: 75px;
+    height: 30px;
+    font-weight: bold;
+    background-image: url(../Iconos/Icon-pdf.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    padding-top: 4px;
+}
+
+/* FOOTER */
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #152331;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#contacto p {
+    font-size: 0.8em;
+}
+
+#contacto ul {
+    display: flex;
+}
+
+#contacto ul li {
+    margin-bottom: 20px;
+    padding: 2px 0;
+}
+
+#contacto ul li:last-child {
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+#contacto li a {
+    color: white;
+    padding: 2px 0 2px 35px;
+}
+
+#contacto li:first-child a{
+    background-image: url(../Iconos/linkedin-mini.png);
+    background-repeat: no-repeat;
+}
+
+#contacto li:nth-child(2) a{
+    background-image: url(../Iconos/mail-mini.png);
+    background-repeat: no-repeat;
+}
+
+#contacto li:last-child {
+    background-image: url(../Iconos/phone-mini.png);
+    background-repeat: no-repeat;
 }
