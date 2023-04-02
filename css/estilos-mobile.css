@@ -154,6 +154,7 @@ button {
     justify-content: center;
     align-items: center;
     background-color: #F8F8F8;
+    padding-bottom: 60px;
 }
 
 #container-estudios {
@@ -189,7 +190,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
     padding-bottom: 30px;
     background-color: white;
 }
@@ -293,43 +293,3 @@ button {
 #contacto ul li a {
     margin: 0;
 }
-
-@media (min-width: 520px) {
-    #sobre-mi img {
-        width: 420px;
-        margin: 40px 0 30px 0;
-    }
-
-    #redes {
-        width: 420px;
-    }
-
-    #texto-sobremi p {
-        width: 420px;
-    }
-}
-
-@media (min-width: 628px) {
-    #imagenes div:first-child div:first-child{
-        background-image: url(../Mockups/web-francia.png);
-        background-position: top right;
-    }
-
-    #imagenes div:last-child div:first-child{
-        background-image: url(../Mockups/web-just.png);
-        background-position: top center;
-    }
-
-    #imagenes div:last-child div:last-child{
-        background-image: url(../Mockups/app-addict.png);
-        background-repeat: no-repeat;
-        background-position: left 30%;
-    }
-}
-
-@media (min-width: 700px) {
-    #programas {
-        height: 132px;
-    }
-}
-

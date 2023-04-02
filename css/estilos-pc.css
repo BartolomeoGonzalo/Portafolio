@@ -135,6 +135,11 @@ header button:hover {
     padding: 60px 0;
 }
 
+#sobre-mi #container-img {
+    margin-right: 58px;
+    margin-left: 80px;
+}
+
 #texto-sobremi {
     display: flex;
     flex-direction: column;
@@ -354,31 +359,5 @@ header button:hover {
 
     #img-illustracion img{
         height: 60vh;
-    }
-}
-
-@media (min-width: 1850px) {
-    #imagenes div:first-child span:first-child {
-        background: url(../Mockups/logo-xl.png);
-        background-repeat: no-repeat;
-        background-position: center 30%;
-    }
-    
-    #imagenes div:first-child span:last-child {
-        background-image: url(../Mockups/web-just-xl.png);
-        background-repeat: no-repeat;
-        background-position: top center;
-    }
-    
-    #imagenes div:last-child span:first-child {
-        background-image: url(../Mockups/web-francia-xl.png);
-        background-repeat: no-repeat;
-        background-position: top right;
-    }
-    
-    #imagenes div:last-child span:last-child {
-        background: url(../Mockups/app-addict-xl.png);
-        background-repeat: no-repeat, no-repeat;
-        background-position: left 30%;
     }
 }

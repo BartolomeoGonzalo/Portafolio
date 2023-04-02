@@ -62,9 +62,10 @@
     <main>
         <section id="sobre-mi">
             <h3 class="d-none">Sobre Mi</h3>
-            <div id="container-img">
-                <img src="Imagenes/yo.png" alt="yo">
-            </div>
+            <picture id="container-img">
+                <source media="(min-width: 992px)" srcset="Imagenes/yo.png">
+                <img src="Imagenes/yo-mobile.png" alt="yo">
+            </picture>
             <div id="texto-sobremi">
                 <h3>Sobre Mi</h3>
                 <p>Soy un estudiante de Desarrollo Web y Mobile, con ganas de seguir aprendiendo en el mundo
