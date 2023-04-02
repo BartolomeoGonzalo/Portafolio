@@ -118,11 +118,14 @@ button {
 
 #sobre-mi {
     background-color: white;
-    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+#sobre-mi {
+    margin-top: 60px;
 }
 
 #sobre-mi img {
@@ -149,7 +152,6 @@ button {
 /* ESTUDIOS */
 
 #estudios {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
